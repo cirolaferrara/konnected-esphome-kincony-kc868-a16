@@ -358,7 +358,7 @@ packages:
       ####
       # WIFI
       # Enables WiFi connectivity and diagnostics. Uncommet below to enable WiFi.
-      #- github://konnected-io/konnected-esphome/packages/wifi.yaml
+      #- packages/wifi.yaml
 
       ####
       # ETHERNET
