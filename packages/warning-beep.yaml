@@ -36,23 +36,7 @@ light:
       - strobe:
           colors:
             - state: true
-              brightness: 100%
-              red: 100%
-              green: 90%
-              blue: 0%
-              duration: 500ms
+              duration: ${warning_beep_pulse_time}
             - state: false
-              duration: 250ms
-            - state: true
-              brightness: 100%
-              red: 0%
-              green: 100%
-              blue: 0%
-              duration: 500ms
-      #- strobe:
-      #    colors:
-      #      - state: true
-      #        duration: ${warning_beep_pulse_time}
-      #      - state: false
-      #        duration: ${warning_beep_pause_time}
+              duration: ${warning_beep_pause_time}
     internal: ${warning_beep_internal_only}
