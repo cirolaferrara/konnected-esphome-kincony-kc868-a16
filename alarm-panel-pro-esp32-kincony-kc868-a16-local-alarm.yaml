@@ -78,6 +78,8 @@ substitutions:
   out1: 2
   status_led: 3
 
+  status_led_inverted: true
+
   ####
   # CONNECTION MAPPINGS
   warning_beep_pin: $out1
