@@ -15,6 +15,7 @@ esphome:
         - text_sensor.template.publish:
             id: project_version
             state: !lambda return ESPHOME_PROJECT_VERSION;
+        - switch.turn_on: trigger_siren
 
 esp32:
   board: esp32dev
