@@ -6,7 +6,6 @@ binary_sensor:
       pcf8574: inputs_9_16
       number: $zone15
       mode: INPUT
-      #inverted: true
     platform: gpio   
     filters:
       - delayed_on_off: $sensor_debounce_time
@@ -16,3 +15,4 @@ binary_sensor:
             lambda: return id(blink_on_state);
           then:
             - script.execute: blink_status_led
+            - script.execute: evaluate_alarm

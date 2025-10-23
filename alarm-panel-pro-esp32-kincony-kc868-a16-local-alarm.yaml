@@ -109,7 +109,7 @@ switch:
     icon: mdi:bullhorn
     optimistic: true
     entity_category: config
-    restore_mode: RESTORE_DEFAULT_OFF
+    restore_mode: ALWAYS_ON
 
 ####
 # STATE MACHINE
@@ -156,6 +156,7 @@ state_machine:
               switch.is_on: trigger_siren
             then:
               - switch.turn_on: alarm1
+              - switch.turn_on: alarm2
         - light.turn_on:
             id: warning_beep_${warning_beep_index}
             effect: strobe
@@ -164,6 +165,7 @@ state_machine:
         - state_machine.transition: arm_away
       on_leave:
         - switch.turn_off: alarm1
+        - switch.turn_off: alarm2
         - light.turn_off: warning_beep_${warning_beep_index}
 
   inputs:
@@ -346,7 +348,7 @@ packages:
 
   remote_package:
     url: https://github.com/cirolaferrara/konnected-esphome-kincony-kc868-a16
-    ref: master
+    #ref: master
     refresh: 5min
     files:
 

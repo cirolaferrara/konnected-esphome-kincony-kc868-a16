@@ -33,10 +33,11 @@ light:
     platform: binary
     output: buzzer_out_${warning_beep_index}
     effects:
-      - strobe:
-          colors:
-            - state: true
-              duration: ${warning_beep_pulse_time}
-            - state: false
-              duration: ${warning_beep_pause_time}
+      - pulse:
+      #- strobe:
+      #    colors:
+      #      - state: true
+      #        duration: ${warning_beep_pulse_time}
+      #      - state: false
+      #        duration: ${warning_beep_pause_time}
     internal: ${warning_beep_internal_only}
