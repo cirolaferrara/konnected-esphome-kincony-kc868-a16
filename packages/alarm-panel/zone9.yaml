@@ -6,7 +6,7 @@ binary_sensor:
       pcf8574: inputs_9_16
       number: $zone9
       mode: INPUT
-      inverted: true
+      #inverted: true
     platform: gpio   
     filters:
       - delayed_on_off: $sensor_debounce_time

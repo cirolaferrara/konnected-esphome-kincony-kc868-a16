@@ -16,3 +16,4 @@ binary_sensor:
             lambda: return id(blink_on_state);
           then:
             - script.execute: blink_status_led
+            - script.execute: evaluate_alarm

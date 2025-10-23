@@ -1,2 +1,2 @@
 # Konnected for ESPHome with Kincony kc868-a16 board
-This repository houses [ESPHome firmware](https://esphome.io) configuration files and recipes for [Konnected](https://konnected.io) with a [Kincony KC868-A16 board](https://www.kincony.com/arduino-esp32-16-channel-relay-module-2.html).
+This repository houses [ESPHome firmware](https://esphome.io) configuration files and recipes for [Konnected](https://konnected.io) alarm panel with a [Kincony KC868-A16 board](https://www.kincony.com/arduino-esp32-16-channel-relay-module-2.html).
