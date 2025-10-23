@@ -33,7 +33,23 @@ light:
     platform: binary
     output: buzzer_out_${warning_beep_index}
     effects:
-      - pulse:
+      - strobe:
+          name: Strobe Effect With Custom Values
+          colors:
+            - state: true
+              brightness: 100%
+              red: 100%
+              green: 90%
+              blue: 0%
+              duration: 500ms
+            - state: false
+              duration: 250ms
+            - state: true
+              brightness: 100%
+              red: 0%
+              green: 100%
+              blue: 0%
+              duration: 500ms
       #- strobe:
       #    colors:
       #      - state: true
