@@ -34,7 +34,6 @@ light:
     output: buzzer_out_${warning_beep_index}
     effects:
       - strobe:
-          name: Strobe Effect With Custom Values
           colors:
             - state: true
               brightness: 100%
