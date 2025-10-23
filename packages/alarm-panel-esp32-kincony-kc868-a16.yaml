@@ -40,11 +40,10 @@ substitutions:
   zone14: 13
   zone15: 14
   zone16: 15
-  alarm1: GPIO12
-  alarm2: GPIO5
-  out1: GPIO23
-  out2: GPIO5
-  status_led: GPIO3
+  alarm1: 0
+  alarm2: 1
+  out1: 2
+  status_led: 3
   
   ####
   # CONNECTION MAPPINGS
@@ -52,7 +51,7 @@ substitutions:
 
 packages:
   remote_package:
-    url: cirolaferrara/konnected-esphome-kincony-kc868-a16
+    url: https://github.com/cirolaferrara/konnected-esphome-kincony-kc868-a16
     ref: master
     refresh: 5min
     file: packages/core-esp32-dev.yaml
