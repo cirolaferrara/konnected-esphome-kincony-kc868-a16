@@ -31,7 +31,7 @@
 substitutions:
   name: alarm-panel-pro
   friendly_name: Alarm Panel Pro
-  project_name: alarm-panel-pro-esp32-kincony-kc868-a16-local-alarm
+  project_name: konnected.alarm-panel-pro-esp32-kincony-kc868-a16-local-alarm
   project_version: "0.1.0"
 
   sensor_debounce_time: 200ms
