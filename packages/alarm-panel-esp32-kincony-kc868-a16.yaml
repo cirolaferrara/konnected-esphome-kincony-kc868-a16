@@ -42,12 +42,8 @@ substitutions:
   zone16: 15
   alarm1: 0
   alarm2: 1
-  out1: 2
+  warning_beep: 2
   status_led: 3
-  
-  ####
-  # CONNECTION MAPPINGS
-  warning_beep_pin: $out1
 
 packages:
   remote_package:

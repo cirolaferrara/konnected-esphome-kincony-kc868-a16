@@ -9,7 +9,7 @@ output:
     platform: gpio
     pin:
       pcf8574: outputs_1_8
-      number: ${warning_beep_pin}
+      number: ${warning_beep}
       allow_other_uses: ${warning_beep_shared}
 
 script:
