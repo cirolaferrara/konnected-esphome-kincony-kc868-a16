@@ -19,7 +19,6 @@ substitutions:
   warning_beep_pause_time: 130ms
   warning_beep_internal_only: "false"
   warning_beep_shared: "false"
-  blink_on_state: "true"
 
   ####
   # ZONE MAPPING
@@ -43,7 +42,6 @@ substitutions:
   alarm1: 0
   alarm2: 1
   warning_beep: 2
-  status_led: 3
 
 packages:
   remote_package:

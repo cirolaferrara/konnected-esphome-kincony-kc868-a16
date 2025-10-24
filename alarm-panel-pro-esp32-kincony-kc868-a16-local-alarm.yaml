@@ -76,7 +76,6 @@ substitutions:
   alarm1: 0
   alarm2: 1
   warning_beep: 2
-  status_led: 3
 
 ######### Exposed to HA ##########
 
@@ -362,11 +361,6 @@ packages:
       # ETHERNET
       # Enables ethernet connectivity.
       - packages/ethernet.yaml
-
-      ####
-      # STATUS LED
-      # Enables the onboard blue status LED as an activity/error indicator
-      - packages/status-led.yaml
 
       ####
       # INPUT ZONES
