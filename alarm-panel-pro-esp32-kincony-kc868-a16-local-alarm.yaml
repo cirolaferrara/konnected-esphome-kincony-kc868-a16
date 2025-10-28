@@ -40,8 +40,6 @@ substitutions:
   warning_beep_internal_only: "false"
   warning_beep_shared: "false"
 
-  status_led_inverted: "false"
-
   #### 
   # ALARM CONFIG
   alarm_code: !secret alarm_master_code
@@ -358,14 +356,13 @@ packages:
 
   remote_package:
     url: https://github.com/cirolaferrara/konnected-esphome-kincony-kc868-a16
-    #ref: master
     refresh: 5min
     files:
 
       ####
       # CORE
       # This package is required and sets up core features.
-      - packages/alarm-panel-esp32-kincony-kc868-a16.yaml
+      - packages/core-esp32-dev.yaml
 
       ####
       # WIFI
@@ -376,6 +373,11 @@ packages:
       # ETHERNET
       # Enables ethernet connectivity.
       - packages/ethernet.yaml
+
+       ####
+      # STATUS LED
+      # Enables the onboard blue status LED as an activity/error indicator
+      - packages/status-led.yaml
 
       ####
       # INPUT ZONES
