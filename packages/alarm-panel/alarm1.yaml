@@ -6,5 +6,6 @@ switch:
       pcf8574: outputs_1_8
       number: $alarm1
       mode: OUTPUT
+      #inverted: true
     platform: gpio
     icon: mdi:bullhorn
