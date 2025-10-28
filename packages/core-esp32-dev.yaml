@@ -58,10 +58,7 @@ pcf8574:
     pcf8575: false
   - id: outputs_9_16
     address: 0x25
-    pcf8575: false    
-
-substitutions:
-  status_led_inverted: "false"
+    pcf8575: false
 
 text_sensor:
   - platform: template
