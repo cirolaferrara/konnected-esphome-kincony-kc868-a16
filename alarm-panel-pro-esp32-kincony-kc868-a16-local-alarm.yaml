@@ -77,6 +77,18 @@ substitutions:
   alarm2: 1
   warning_beep: 2
 
+  ####
+  # WIEGAND
+  wiegand_d0: GPIO32
+  wiegand_d1: GPIO33
+  wiegand_max_length: 4
+  wiegand_min_length: 4
+  wiegand_end_keys: "#"
+  wiegand_back_keys: "*"
+  wiegand_clear_keys: "C"
+  wiegand_allowed_keys: "0123456789"
+  wiegand_timeout: 5s
+
 ######### Exposed to HA ##########
 
 # sensor.alarm_state
@@ -392,6 +404,11 @@ packages:
       # binary output This is implemented using the light component with strobe effect to create a 
       # repeated beeping sound or pulsing action that can be turned on via the _strobe_ effect.
       - packages/warning-beep.yaml
+
+      ####
+      # WIEGAND
+      # Enables wiegand keypad and tag reader.
+      - packages/wiegand.yaml
 
 
 dashboard_import:

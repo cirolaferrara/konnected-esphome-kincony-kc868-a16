@@ -1,0 +1,31 @@
+wiegand:
+  - id: keypad
+    d0: ${wiegand_d0}
+    d1: ${wiegand_d1}
+
+key_collector:
+  - id: pincode_reader
+    source_id: keypad
+    min_length: ${wiegand_max_length}
+    max_length: ${wiegand_min_length}
+    end_keys: ${wiegand_end_keys}
+    back_keys: ${wiegand_back_keys}
+    clear_keys: ${wiegand_clear_keys}
+    allowed_keys: ${wiegand_allowed_keys}
+    timeout: ${wiegand_timeout}
+    end_key_required: true
+    on_result:
+      - if:
+          condition:
+            lambda: |-
+              return x == std::string("${alarm_code}");
+          then:
+            - if:
+                condition:
+                  state_machine.state: disarmed
+                then:
+                  - state_machine.transition: arm_away
+                else:
+                  - state_machine.transition: disarm
+          else:
+            - state_machine.transition: failed_code
