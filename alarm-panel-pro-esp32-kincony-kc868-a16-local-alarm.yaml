@@ -78,18 +78,6 @@ substitutions:
   warning_beep: 2
   status_led: 3
 
-  ####
-  # WIEGAND
-  wiegand_d0: GPIO32
-  wiegand_d1: GPIO33
-  wiegand_max_length: 4
-  wiegand_min_length: 4
-  wiegand_end_keys: "#"
-  wiegand_back_keys: "*"
-  wiegand_clear_keys: "C"
-  wiegand_allowed_keys: "0123456789"
-  wiegand_timeout: 5s
-
 ######### Exposed to HA ##########
 
 # sensor.alarm_state
