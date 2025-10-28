@@ -40,6 +40,8 @@ substitutions:
   warning_beep_internal_only: "false"
   warning_beep_shared: "false"
 
+  status_led_inverted: "false"
+
   #### 
   # ALARM CONFIG
   alarm_code: !secret alarm_master_code
@@ -76,6 +78,7 @@ substitutions:
   alarm1: 0
   alarm2: 1
   warning_beep: 2
+  status_led: 3
 
   ####
   # WIEGAND
