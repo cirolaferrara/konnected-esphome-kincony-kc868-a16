@@ -39,6 +39,7 @@ remote_transmitter:
     number: GPIO15
     ignore_strapping_warning: true
   carrier_duty_percent: 100%
+  non_blocking: true
 
 i2c:
   sda: GPIO4
